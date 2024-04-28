@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Token</title>
+</head>
+<body>
+    <h1>Token Information</h1>
+    <p><strong>Token:</strong> {{ token }}</p>
+    <p><strong>Status:</strong> {{ status|default('active') }}</p>
+<a href="{{ url_for('index') }}">Go to Homepage</a>
+</body>
+</html>
